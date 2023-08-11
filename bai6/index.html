@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+     /* justify-content: space-between;*/
+        background-color: #dbdbdb;
+        height: 500px;
+        gap: 10px;
+       /*  align-items: center; */
+    }
+    .flex-item{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+    .flex-item2{
+       flex: 1;
+    }
+     .flex-item3{
+       flex: 2;
+    }
+
+</style>
+<body>
+    <!-- 
+        FLEX: CSS
+        dàn layout
+        1.flex-container
+        2.flex-item
+        ******************
+        mặc định khi flex-direction: row thì trục main axis nằm ngang
+        khi flex-direction:column thì trục cross-axis lại nằm ngang
+        trục main-axis ăn   theo justify-content
+        trục cross-axis  ăn theo align-item
+     -->
+     <div class="container">
+        <div class=" flex-item flex-item1">
+            <div class="div1">
+
+            </div>
+        </div>
+        <div class="flex-item flex-item2">2</div>
+        <div class="flex-item flex-item3">3</div>
+     </div>
+</body>
+</html>
