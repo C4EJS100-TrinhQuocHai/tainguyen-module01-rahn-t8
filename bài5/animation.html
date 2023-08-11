@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .container{
+            width: 200px;
+            height: 100px;
+            background-color: blueviolet;
+            position: relative;
+        }
+
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid black;
+            border-right: 2px solid red;
+            border-left: 2px solid yellow;
+            animation-name:circle ;/* tên của animation */
+            animation-delay: 2s; /* độ trễ của animation */
+            animation-duration: 5s;/*  thời gian hoàn thành animation */
+            animation-timing-function: linear; /* tốc độ chuyển động   */
+            animation-iteration-count: infinite;/*  số lần thực hiện chuyển động */
+            position: absolute;
+        }
+        @keyframes circle {
+            0%{
+                left: 0;
+                top: 0;
+            }
+            25%{
+                left: 100px;
+                top: 0;
+            }
+            50%{
+                top: 100px;
+                left: 100px;
+              
+            }
+            75%{
+                left: 0;
+                top: 100px;
+            }
+            100% {
+             
+                top: 0;
+                left: 0;
+            }
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="circle">
+        
+        </div>
+    </div>
+</body>
+</html>

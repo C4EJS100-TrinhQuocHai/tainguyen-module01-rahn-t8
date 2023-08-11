@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    table{
+        background-color: #fff;
+        border: 1px solid black;
+    }
+    td{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 15px;
+
+    }
+    .tfoot{
+        display: inline-block;
+        background-color: rgb(218, 222, 255);
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        
+    }
+   
+</style>
+
+<body>
+
+    <!-- 
+        CSS basic
+        cascading style sheet: tạo phong cách, làm đẹp
+        3 cách làm việc   với  CSS
+         C1: inline: CSS trực tiếp cho từng dòng
+         C2: internal: mình sẽ viết CSS trong cặp thẻ style
+         C3: external : tạo file có đuôi.css rồi CSS cho file đó
+         *******************
+         Các cách định danh cho element
+         c1: class : nhiều element có thể đặt chung class,1 element có thể có nhiều class
+         C2: id : duy nhất nên đặt 1 cái 
+         ****
+         Mã màu trong CSS
+         1.màu theo tên tiếng anh: red, blue,white,tomato.....
+         2.màu theo RGB ( red,green,blue) chạy từ 0 đến 255
+         3. RGBA( a tức là anpha chạy từ 0==>1)
+         4. hsl hue saturation lightness
+         ****
+         box-model 
+         padding: là khoảng cách từ border đến content
+         border : độ dày của viền 
+         margin: khoảng cách  giữa các element
+        ****
+        Reset CSS
+        đưa về trạng thái mặc định của trình duyệt 
+        ******
+            Phân biệt
+            display: none
+            visibility: hidden
+            opacity:0
+        ************
+        animation
+        transitions
+        transform
+        position
+     -->
+
+    <table>
+        <caption>Price Details</caption>
+        <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum dolor.</td>
+        </tr>
+       <tfoot>
+            <tr class="tfoot">
+                <td>Lorem, ipsum dolor.</td>
+                <td>$850</td>
+            </tr>
+       </tfoot>
+    </table>
+
+</body>
+
+</html>

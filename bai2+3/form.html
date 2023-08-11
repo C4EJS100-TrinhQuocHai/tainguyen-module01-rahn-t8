@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form
+        ==>dùng để tạo biểu mẫu , nhập dữ liệu
+        -các thuộc tính riêng của form
+         + action : địa chỉ server nơi nhận dữ liệu
+         + method các phương thức làm việc với form ( GET,POST, PUT,PATCH,DELETE)
+        - cách tạo form và các thẻ hay dùng trong form
+         1.label dùng để làm nhãn dán ( focus vào ô nhập dữ liệu với thuộc 
+         tính for trùng với id  của thẻ ).
+         2.input : ô nhập dữ liệu
+            -các thuộc tính riêng của thẻ input
+             + type : 
+                1.text mặc định là text ()
+                2.password ẩn mật khẩu đi
+                3.radio tích 1 cái trong nhiều cái 
+                4.checkbox tích chọn nhiều cái 
+                5.range : tạo thanh trượt
+                6. date : hiển thị ngày  
+                7. number : chỉ nhập số  nhập được chữ e
+                8. tel
+             + value : giá trị ô input
+             + name : dùng để gửi dữ liệu lên server
+             + placeholder : gợi ý cho người dùng nhập
+             + autocomplete
+             + required : bắt buộc phải nhập để submit
+             + disabled : ẩn không dừng submit
+        3. button tạo nút bấm để submit 
+        4. select option : bộ chọn 
+        5. textarea : tạo form nhập text 
+     -->
+     <!--  tạo form register ( đăng kí tài khoản).
+     -->
+     <form action="">
+            <label for="username"> tên đăng nhập </label>
+            <input type="" id="username" placeholder="mời bạn nhập tên" required autocomplete="off">
+            A<input type="radio" name="test">
+            B<input type="radio" name="test">
+            C<input type="radio" name="test">
+            D<input type="radio" name="test">  <br>
+           Name <input type="radio" name="gender" checked>
+           Nữ   <input type="radio" name="gender">
+           Hiếu <input type="radio" name="gender"> 
+           <input type="range" max="10" min="0" value="0">
+           <input type="date">
+           <input type="text" value="minh">
+           <input type="submit" >
+           <button>
+            login 
+           <input type="submit">
+        </button>
+        <select name="" id="">
+            <option value="">quần</option>
+            <option value="">áo</option>
+            <option value="">túi sách</option>
+        </select> <br>
+        <textarea name="" id="" cols="10" rows="10">
+        </textarea>
+     </form>
+</body>
+</html>
