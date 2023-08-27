@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p> hello <span>ok</span> oooooooooooo</p>
+    <!-- 
+        Conditions : Điều kiện
+        -if-else
+            + if
+                 if(condition){
+
+                     }
+            + if-else
+               if(condition){
+
+               }else{
+               }
+            + if-else : bậc thang
+            + if-else : lồng
+              ==> trong if-else lại  có if-else
+        -switch-case
+     -->
+    <script>
+
+        /*  if( a>3){
+            if(a>4){
+             console.log(`${a} lớn hơn  4`);
+            }else{
+             console.log(`${a} bé hơn  4`);
+            }
+         }else{
+             console.log(`${ a } bé hơn  3`);
+         } */
+
+        // a>3 ? console.log(`${ a } lớn hơn 3`) : console.log(`${a} bé hơn  3`);
+        // a>3?a>4? console.log(`${a} lớn hơn  4`):console.log(`${a} bé hơn  4`) :
+        // console.log(`${a} bé hơn  3`);
+        /*    let a = +prompt("mời nhập thứ trong tuần!");
+   
+           switch (a) {
+               case 2:// so sánh ===
+               case 3:
+               case 4:
+               case 5:
+               case 6:
+               case 7:
+                   console.log("ngày đi học");
+                   break;
+               default:
+                   console.log("ngày được nghỉ");
+           } */
+        let a = 5;
+        if (a > 4) {
+            console.log(`${a} lớn hơn 4`);
+        } else if (a > 5) {
+            console.log("a lớn hơn 5");
+        } else if (a < 6) {
+            console.log("a lớn hơn 6");
+        }
+        else {
+            console.log(" trường hợp còn lại!");
+        }
+        switch (a > 4) {
+            
+            case a > 4:
+                console.log("a lớn hơn 4");
+                break;
+            case a > 5:
+                console.log("a lơn hơn 5");
+                break
+            case a < 6:
+                console.log("a lơn hơn 5");
+                break;
+            default:
+                console.log("trường hợp còn lại");
+                break;
+        }
+    </script>
+</body>
+
+</html>

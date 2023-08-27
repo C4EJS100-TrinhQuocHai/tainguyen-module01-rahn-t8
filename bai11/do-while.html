@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        -do-while: chạy ít nhất 1 lần khi nào điều kiện sai thì dừng;
+        -break :dùng để thoát khỏi vòng lặp
+     -->
+    <script>
+    //    BÀI 5: Viết chương trình kiểm tra số N có phải là số nguyên tố không? N nhập từ browser
+    let n = +prompt("nhap so");
+    let check = true;
+     if (n<=1) {
+        console.log("khong phai  so nguyen to");
+
+     }else{
+         for (let i = 2; i < n; i++) {
+            console.log("khong phai so nguyen to ");
+            check = false;
+            break;
+         } 
+          if (check) {
+            console.log("la so nguyen to")
+
+          }
+     }
+    </script>
+</body>
+
+</html>

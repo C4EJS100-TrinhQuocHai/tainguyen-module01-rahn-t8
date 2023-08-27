@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        While:
+        -break dùng để thoát khỏi vòng lặp while
+        -có thể không chạy lần nào nếu điều kiện (falsy)
+        falsy: false, NaN, null,undefined,0,"",''
+     -->
+    <button onclick="runRandom()"> Run </button>
+    <script>
+        function runRandom() {
+            let number = Math.ceil(Math.random() * 6);
+            console.log("number", number);
+            while (number != 6) {
+                console.log("bạn phải nhấn lại");
+                return;
+            }
+
+            console.log("chọn đúng!");
+        }
+    </script>
+</body>
+
+</html>

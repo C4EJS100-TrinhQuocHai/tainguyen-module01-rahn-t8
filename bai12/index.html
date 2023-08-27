@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Array: lưu trữ tập hợp  phần tử ( element khác nhau) lại với nhau.
+        array: kiểu dữ liệu phức tạp
+        -giá trị lưu ở vùng nhớ HEAP
+        -Kiểu tham chiếu
+        1.Cách khởi tạo mảng
+            - mảng chứa các phẩn tử ngăn cách với nhau bởi dấu phẩy.
+            - mảng  có thể chứa nhiều kiểu dữ liệu khác nhau.
+        2. các thuộc tính riêng của mảng
+        -index: là chỉ mục các phần tử trong mảng:
+         + chỉ mục của mảng được đánh giá bắt đầu từ 0
+        -length: số phần tử trong mảng
+        3. typeof của array là object
+        -kiểm tra có phải là mảng hay không thì dùng Array.isArray().
+        4.Truy cập các phẩn tử trong mảng
+            tên mảng[index];
+        5. CRUD với mảng
+        -C: Create : thêm mới phần tử trong mảng.
+         + dùng push(): phương thức thêm phần tử vào vị trí cuối cùng của mảng
+         + unshift () : phương thức thêm phần tử vào vị trí đầu tiên của mảng
+         + thêm trực tiếp  theo chỉ mục index
+         + splice ()
+        -R: Read   : đọc hay duyệt các phần tử trong mảng
+         + for     : thường
+         + for-in  : in ra chỉ mục index của mảng
+         + for-of  : in ra giá trị các phần tử trong mảng
+        -U: Update : cập nhật phần tử trong mảng
+         +update   : trực tiếp
+         +splice   :
+        -D: Delete : xoá phần tử trong mảng
+         +pop()    : xoá phần tử cuối cùng trong mảng
+         +shift()  : xoá phần tử đầu tiên của mảng
+         +splice() :
+
+         ***********************
+         Các phương thức làm việc với mảng.
+         1.slice
+         - cắt, sao chép ra 1 mảng mới.
+         2.sort 
+         -sắp xếp các phần tử trong mảng theo bảng mã asci.
+         3.reverse(): đảo ngược mảng
+         4.split()  :cắt chuỗi thành mảng.
+         5.join()   :gộp các phần tử trong mảng thành chuỗi.
+         6.toString :chuyển mảng thành chuỗi có thể chuyển số thành chuỗi.
+         7.indexOf(): kiểm tra phần tử  có trong mảng hay không nếU có trả về vị trí tìm
+         thấy đầu tiên
+         không có trả về -1
+         8.includes :  tìm kiếm phần tử trả về true/false
+         9.toUpperCase(): chuyển  thành chữ hoa
+         10.toLowerCase(): chuyển thành chữ thường
+         11.charAt(): lấy kí tự vị trí của chuỗi
+         12.map()
+         13.reduce()
+         14.filter()
+         15.forEach()
+         16.find()
+         17.findIndex()
+         18.every()
+         19.some()
+         20.fill()
+         21.concat()
+         22.endWidth()
+         23.startWidth()
+
+        -->
+        
+     <script>
+        
+        // let result=students.includes("hoa1");
+        let a=[5,7];
+        a[0]=15;
+        let text="hưng Béo quá đI à";
+        // HƯNG bÉO QUÁ Đi À
+
+        // let result=text.split(" ");
+        // //["hưng","béo","quá"]
+        // for (let i = 0; i < result.length; i++) {
+        //    //"H"+"ưng"
+        //       result[i]= result[i].slice(0,1) + result[i].charAt(1).toUpperCase()+ result[i].slice(2);
+        // }
+        // console.log(result.join(" "));
+        // ["hello","rikkei"]
+        // students[4]=16;
+      /*   console.log(" độ dài của mảng hay số phần tử trong mảng",students.length);
+        console.log(typeof(students));
+        console.log(Array.isArray([])); */
+        // students.push("lan");
+        // students.push("hồng");
+        //[5,4,15,empty,16,"minh",]
+        // students[students.length]="minh";
+        // students[6+1]="lan";
+        // let a=[];
+        // a[2]=5;
+        // students.splice(1,0);
+        // console.log(students);
+        // for (let index = students.length-1; index >=0; index--) {
+        //     console.log("index",students[index]);       
+        // }
+        // for (let hieu in students) {
+        //     console.log(hieu);
+        // }
+        // for (const vinh of students) {
+        //     console.log(vinh);
+        // }
+    //    let result= students.slice(1)
+    //     console.log(students.reverse());
+     </script>
+</body>
+</html>

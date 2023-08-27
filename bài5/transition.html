@@ -16,13 +16,10 @@
         border: none;
         border-radius: 5px;
         position: relative;
-
     }
-
     span {
         position: absolute;
     }
-
     .child1 {
         width: 0%;
         height: 3px;
@@ -30,7 +27,6 @@
         left: 0;
         transition: all 2s linear;
     }
-
     .child2 {
         width: 3px;
         height: 0;
@@ -38,17 +34,14 @@
         transition: all 2s linear 2s;
         background-color: red;
     }
-
     button:hover .child1 {
         width: 100%;
 
     }
-
     button:hover .child2 {
         width: 3px;
         height: 100%;
     }
-
     .child3 {
         width: 0;
         height: 0;
@@ -69,7 +62,11 @@
         background-color: yellow;
         left: 0;
         bottom: 0;
-        transition: all 2s linear 6s;
+     /*    transition: all 2s linear 6s; */
+       transition-property: all; /* ăn hết các thuộc tính */
+       transition-duration:2s;/*  thời gian chạy hết chuyển đỘng */
+       transition-delay: 2s; /*  độ trễ của chuyển động */
+       transition-timing-function: linear; /* tốc độ nhanh hay chậm( linear: chuyển động đều) */
     }
     button:hover .child4 {
         width: 3px;
