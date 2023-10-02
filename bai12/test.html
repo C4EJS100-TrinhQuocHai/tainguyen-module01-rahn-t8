@@ -1,114 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bai Tap CSS</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
 </head>
-<style>
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.box{
-    width: auto;
-    height: auto;
-    margin: 50px;
-}
-ul{
-    list-style-type: none;
-    margin-top: 100px;
-    width: 100%;
-    margin-left: -12px;
-    margin-right: -12px;
-}
-li{
-    display: inline-block;
-    text-align: center;
-    background-color: rgb(244, 240, 233);
-    padding: 5px;
-    margin: 8px;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-span{
-    border: 3px solid rgb(30, 175, 91);
-    border-radius: 50%;
-    padding: 4%;
-    margin: 8px;
-}
-p{
-    text-align: center;
-}
-
-</style>
 <body>
-    <div class="box">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        eco
-                    </span>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </a>
+    <script>
+           /* 
+             Bài tập từ điển.
+              b1: tạo mảng tiếng anh.
+              b2: tạo mảng tiếng việt.
+              b3: 
+            
+            */
+          /*  let vietnamese=["xanh","đỏ","tím","vàng"];
+           let english=["blue","red","violet","yellow"];
+           let text=prompt("mời nhập từ cần chuyển sang tiếng anh");
+           let index=vietnamese.indexOf(text);
+           if(index!=-1){
+            console.log(` từ ${text} dịch sang tiếng anh là ${english[index]}`);
 
-            </li>
-            <li>
+           }else{
+            console.log("từ không tìm thấy!");
+           } */
+       /*     let count=0;
+           let numbers=[]; 
+           do {
+            let num=+prompt("mời bạn nhập số");
+                if(Number.isInteger(num)){
+                    count++;
+                    if(num>10){
+                        numbers.push(num);
+                    }
+                }else{
+                    console.log("số bạn nhập không phải số nguyên nhập lại");
+                }
 
-                <a href="#"><span class="material-symbols-outlined">
-                        computer
-                    </span>
-                    <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </a>
+           } while (count<5);
 
-            </li>
-            <li>
-                <a href="#">
-                    <span class="material-symbols-outlined">
-                        home_repair_service
-                    </span>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+           console.log(numbers); */
 
-                </a>
+    
+      /* 
+           kiểm tra chuỗi có phải đối xứng hay không
+           vd:  lool
+                raar
+                lal
 
-            </li>
-            <li>
-                <a href="#"><span class="material-symbols-outlined">
-                        photo_camera
-                    </span>
-                    <h2>Photography</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </a>
-            </li>
-            <li>
-                <a href="#"><span class="material-symbols-outlined">
-                        android
-                    </span>
-                    <h2>Appdevelopment</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </a>
-            </li>
-            <li>
-                <a href="#"><span class="material-symbols-outlined">
-                        monitoring
-                    </span>
-                    <h2>Digital Marketing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </a>
-            </li>
-        </ul>
-    </div>
+       */
+      
+      let text=prompt("mời bạn nhập chuỗi cần kiểm tra");
+      let arr=text.split("").reverse();
+      if(arr.join("")==text){
+        console.log("là chuỗi đối xứng!");
+      }else{
+        console.log("không phải chuỗi đối xứng");
+      }
+
+    </script>
 </body>
-
 </html>

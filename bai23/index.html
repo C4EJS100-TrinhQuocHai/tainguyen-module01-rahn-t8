@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        Storing data in the browser
+        1.localStorage
+        Dung lượng : khoảng 5MB-
+        1mb=1024kb
+        1kb=1024b (byte)
+        -khi lưu dữ liệu sẽ không bị mất đi khi đóng hay tắt trình duyệt
+        2.sessionStorage
+        DL: 3-5Mb
+        -chỉ lưu dữ liệu được khi còn phiên làm việc
+        3.cookies
+        -mình có thể set hạn tồn tại cho nó ( expire)
+        -ghi nhớ đăng nhập để lần sau đăng nhập
+        -khảo sát người dùng tìm kiếm content
+        -mỗi lần request gửi kèm lên server
+        DL: 3kb
+
+        ***********************
+        Cách thao tác với localStorage
+        ==> chỉ cho phép lưu dạng string
+        1.lưu dữ liệu lên
+         +localStorage.setItem(tên_key,giá trị cần lưu);
+         +khi lưu dạng object or array phải chuyển dang định dạng JSON để lưu
+        localStorage.setItem("name",JSON.stringify(obj))
+        2.lấy dữ liệu về
+         +localStorage.getItem(tên_key);
+         khi lấy về: phải chuyển từ định dạng JSON sang dạng bình thường để dùng
+        3.xoá đi
+          +localStorage.removeItem("tên_key") : XOÁ 1 KEY THÔI
+          +localStorage.clear()
+     -->
+     <script>
+        // let a=5;
+        // localStorage.setItem("bien A",a);
+        // //
+        // let result= localStorage.getItem("bien A");
+        // console.log(result);
+        // localStorage.removeItem("bien A")
+        // localStorage.setItem("hieu","mộng mơ");
+        // localStorage.setItem("lam", "mộng du");
+
+        // let a=5;
+        // let obj={
+        //     name:"híu",
+        // }
+        // // localStorage.setItem("bienA",a);
+        // // localStorage.setItem("name",JSON.stringify(obj))
+        // let result=JSON.parse(localStorage.getItem("name"));
+        // console.log(result);
+        // let text="hello ra";
+
+        
+     </script>
+</body>
+</html>

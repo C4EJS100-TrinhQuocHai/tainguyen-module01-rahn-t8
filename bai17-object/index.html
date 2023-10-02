@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        OOP: lập trình hướng đối tượng
+        4 tính chất: 
+        1. đóng gói
+        2. kế thừa
+        3. trừu tượng
+        4. đa hình
+        Object- Đối tượng
+        gồm thuộc tính (property) và phương thức (method)
+        object kiểu dữ liệu phức tạp -reference type-kiểu tham chiếu
+        Các cách để khởi tạo đối tượng
+        1.let, const, var
+        2.function
+        3.class
+        object chứa các cặp key(thuộc tính) và value
+        **********************
+        CRUD với object
+        C: create
+        để thêm thuộc tính cho đối tượng thì đối tượng .thuộc tính = giá trị ;
+        R: Read đọc 
+        for-in : trả về key( các thuộc tính của đối tượng);
+        U: update
+        đối tượng chấm thuộc tính gán lại giá trị cho nó;
+        D: delele (xoá thuộc tính)
+     -->
+    <script>
+        // let students=[]
+
+        //     let student={
+        //         name:"Hiếu",
+        //         age:25,
+        //         address:"Nam Định",
+        //         gender:"female"
+        //     }
+        //     console.log(student.name);
+        //   for (const abc in student) {
+        //        if(student[abc]=="Nam Định"){
+        //             console.log(abc);
+        //        }
+        //   }
+        //   let arr=[7,9,6];
+        //   for (const key in arr) {
+        //         console.log(arr[key]);
+        //   }
+        // student.name="trang";
+        // delete student.age;
+        // console.log(student);
+        // khởi tạo đối tượng dùng function
+        // let st1={
+        //     name:"hoa",
+        //     id:"001"
+        // }
+        //   let st2 = {
+        //         name: "nam",
+        //         id: "002"
+        //     }
+        //     constructor
+        // function Student(name, age,address) {
+        //     this.name = name;
+        //     this.age = age;
+        // }
+        // let st1 = new Student("hoa", 25); //{a:"hoa",b:25}
+        // let st2 = new Student("Nam", 26);
+        // console.log(st1);
+        // console.log(st2);
+
+
+        let obj1 = {
+            name: "hoa",
+            infor: {
+                address: "hà nội",
+                age: 25
+            }
+        }
+        // let obj2 = {...obj1};
+        // obj1.name="tươi";
+        // obj1.infor.address="hcm";
+        // obj1.infor.age=26,
+        // console.log(obj2.name);
+        // console.log(obj2.infor.address);
+        // console.log(obj2.infor);
+        let obj2 = JSON.parse(JSON.stringify(obj1));
+        obj1.infor.address = "hcm";
+        console.log(obj2);
+
+        let result = { name: "1" } + { age: 8 };
+        console.log(result);
+
+
+        /*
+       
+          CÁC CÁCH CLONE Object
+          DEEP CLONE && SHALLOW CLONE
+         Shallow clone ( clone nông)
+          1.toán tử Spread
+          DEEP CLONE
+          chuyển sang kiểu JSON
+         */
+     
+    </script>
+</body>
+
+</html>

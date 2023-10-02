@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        filter
+        map
+        reducer
+        forEach
+        find
+        some
+        every
+     -->
+     <script>
+        let students=[
+            {
+                name:"hoa",
+                id:1
+            },
+             {
+                name: "hoa",
+                id: 2
+            },
+             {
+                name: "lan",
+                id: 3
+            }
+        ]
+        // let result=[];
+        // for (let i = 0; i < students.length; i++) {
+        //    if(students[i].name=="hoa"){
+        //     result.push(students[i])
+        //    }
+        // }
+        // console.log(result);
+        let result=students.filter((item)=>{
+            return item.name=="hoa";
+        })
+            
+  
+        console.log(result);
+     </script>
+</body>
+</html>

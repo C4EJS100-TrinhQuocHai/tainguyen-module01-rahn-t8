@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for=""> email</label> <br>
+        <input type="text" name="" id="email"> <br>
+        <label for=""> password</label> <br>
+        <input type="text" id="password"><br>
+        <button onclick="add(event)">login</button>
+    </form>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th> stt</th>
+                <th> email</th>
+                <th> id</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script>
+        let students=JSON.parse(localStorage.getItem("students"))||[];
+        function uuid() {
+            return Math.floor(Math.random()*5784574857);
+        }
+        function add(e){
+            e.preventDefault();
+            let info={
+                email:document.getElementById("email").value,
+                id:uuid(),
+                password:document.getElementById("password").value,
+            }
+            students.push(info);
+            //lưu lại trên local
+            localStorage.setItem("students",JSON.stringify(students));
+            //gọi lại hàm render
+            render(students);
+        }
+        // 
+        function render(params) {
+            let text="";
+            for (let i = 0; i < params.length; i++) {
+              text+=
+              `
+                <tr>
+                    <td> ${i+1}</td>
+                    <td> ${params[i].email}</td>
+                    <td>  ${params[i].id}</td>
+                </tr>
+              `  
+            }
+            document.getElementById("tbody").innerHTML=text;
+        }
+        render(students)
+    </script>
+</body>
+</html>
